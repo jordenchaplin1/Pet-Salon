@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/index-dark-mode.css">
+    <title>Home</title>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Pet Salon</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="registration.html">Registration</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+   <main>
+    <!-- Welcome section -->
+    <section class="container py-5">
+        <div class="d-flex justify-content-end">
+            <button
+                id="changeModeBtn"
+                class="btn btn-outline-secondary"
+                type="button"
+                aria-label="Toggle dark mode">
+                🌙
+            </button>
+        </div>
+
+        <div class="row align-items-center g-5 py-4">
+            <div class="col-md-7">
+                <p class="text-uppercase fw-bold">
+                    Welcome to Pet Salon
+                </p>
+
+                <h1 class="display-4 fw-bold">
+                    Happy pets.<br>
+                    Fresh looks.
+                </h1>
+
+                <p class="lead my-4">
+                    Give your best friend a little extra love with
+                    gentle grooming, refreshing baths, and caring service.
+                </p>
+
+                <div class="d-flex flex-wrap gap-3">
+                    <a href="registration.html" class="btn btn-success btn-lg">
+                        Register Your Pet
+                    </a>
+
+                    <a href="services.html" class="btn btn-outline-success btn-lg">
+                        View Services
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <div class="salon-panel text-center p-5 rounded-4">
+                    <span class="pet-emoji" role="img" aria-label="Happy dog">
+                        🐶
+                    </span>
+
+                    <h2 class="h4 mt-3">Looking good. Feeling great.</h2>
+                    <p class="mb-0">
+                        A little pampering for your favorite companion.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services section -->
+    <section class="container py-5">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold">Care from nose to tail</h2>
+            <p>Find the right service for your pet.</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <article class="salon-panel h-100 p-4 rounded-4">
+                    <span class="service-emoji" aria-hidden="true">🛁</span>
+                    <h3 class="h4 mt-3">Bath & Brush</h3>
+                    <p>
+                        A refreshing bath and gentle brushing for
+                        a clean, comfortable coat.
+                    </p>
+                    <a href="services.html" class="btn btn-outline-success">
+                        Learn More
+                    </a>
+                </article>
+            </div>
+
+            <div class="col-md-4">
+                <article class="salon-panel h-100 p-4 rounded-4">
+                    <span class="service-emoji" aria-hidden="true">✂️</span>
+                    <h3 class="h4 mt-3">Full Grooming</h3>
+                    <p>
+                        A fresh haircut and finishing touches
+                        tailored to your pet.
+                    </p>
+                    <a href="services.html" class="btn btn-outline-success">
+                        Learn More
+                    </a>
+                </article>
+            </div>
+
+            <div class="col-md-4">
+                <article class="salon-panel h-100 p-4 rounded-4">
+                    <span class="service-emoji" aria-hidden="true">🐾</span>
+                    <h3 class="h4 mt-3">Nail Care</h3>
+                    <p>
+                        Careful nail trimming to help keep
+                        your pet's paws comfortable.
+                    </p>
+                    <a href="services.html" class="btn btn-outline-success">
+                        Learn More
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section class="container py-5">
+        <div class="salon-panel p-4 p-md-5 rounded-4 text-center">
+            <h2 class="fw-bold">More than a haircut</h2>
+
+            <p class="lead">
+                Every pet deserves patience, kindness, and a little pampering.
+            </p>
+
+            <p>
+                Tell us about your pet so we can learn about their
+                grooming needs before their visit.
+            </p>
+
+            <a href="registration.html" class="btn btn-success">
+                Get Started
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer class="container text-center py-4 border-top">
+    <p class="mb-0">Pet Salon · Care for your best friend 🐾</p>
+</footer>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+
+        <!-- jquery connection -->
+       <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+
+
+    <script src="./scripts/index-dark-mode.js"></script>
+</body>
+</html>

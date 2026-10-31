@@ -1,0 +1,150 @@
+/*Color Variables -> Default Mode: Light*/
+:root {
+    --background-color: #6c9973;
+    --surface-color: #8dc297;
+    --text-color: #1a2744;
+    --accent-color: #008fff;
+}
+
+.dark-mode {
+    --background-color: #1a2744;
+    --surface-color: #23345a;
+    --text-color: #f4f4fb;
+    --accent-color: #45adff;
+}
+
+*{
+    font-family: 'Segoe UI', Tahoma, Genova, Verdana, sans-serif;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--background-color);
+    transition: background-color 0.8s ease;
+}
+
+
+
+
+
+.center {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+section {
+    height: 100vh;
+    justify-content: space-evenly;
+}
+ h1, h2, p {
+    color: var(--text-color);
+ }
+  p {
+    line-height: 28px;
+  }
+button, a {
+    background-color: var(--surface-color);
+    color: var(--accent-color);
+    padding: 10px 15px;
+    font-size: 16px;
+    border: var(--accent-color) solid 2px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover, a:hover {
+    opacity: 0.5;
+  }
+
+  #descriptionContainer {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    background-color: var(--surface-color);
+    padding: 10px 30px;
+    border-radius: 20px;
+  }
+
+  #resumeContainer {
+    display: none;
+  }
+
+  /* Panels use your existing light and dark color variables. */
+.salon-panel {
+    background-color: var(--surface-color);
+    color: var(--text-color);
+    border: 1px solid var(--accent-color);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.pet-emoji {
+    display: block;
+    font-size: 8rem;
+    line-height: 1.2;
+}
+
+.service-emoji {
+    font-size: 2.5rem;
+}
+
+main,
+footer {
+    color: var(--text-color);
+}
+
+#changeModeBtn {
+    min-width: 48px;
+}
+
+/* Registration page */
+.registration-page {
+    background-color: #fffaf0;
+    color: #233d34;
+}
+
+.registration-page h1,
+.registration-page h2 {
+    color: #285943;
+}
+
+.registration-page p {
+    color: #526359;
+}
+
+.registration-page .salon-panel {
+    background-color: #e8f2e9;
+    border: 1px solid #bbd5c1;
+    box-shadow: 0 8px 24px rgba(35, 61, 52, 0.1);
+}
+
+.registration-page .form-label {
+    color: #285943;
+    font-weight: 600;
+}
+
+.registration-page .form-control,
+.registration-page .form-select {
+    background-color: #ffffff;
+    color: #233d34;
+    border: 1px solid #abc5b2;
+    border-radius: 8px;
+}
+
+.registration-page .form-control:focus,
+.registration-page .form-select:focus {
+    border-color: #36835a;
+    box-shadow: 0 0 0 3px rgba(54, 131, 90, 0.18);
+}
+
+.registration-page #list li {
+    background-color: #ffffff;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+}
