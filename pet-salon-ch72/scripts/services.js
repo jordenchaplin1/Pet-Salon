@@ -19,3 +19,4 @@ $("#serviceName, #serviceDescription, #servicePrice").on("input", function() {
         $(this).css("border", "");
     }
 });
+
