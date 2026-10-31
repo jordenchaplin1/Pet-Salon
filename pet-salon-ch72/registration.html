@@ -32,18 +32,168 @@
     </div>
     </nav>
 
-    <h1>Registration Page</h1>
+   <main class="container py-5">
+    <!-- Page heading -->
+    <div class="text-center mb-5">
+        <p class="text-uppercase fw-bold">Welcome to the salon</p>
+        <h1 class="display-5 fw-bold">Register Your Pet 🐾</h1>
+        <p class="lead">
+            Tell us a little about your best friend.
+        </p>
+    </div>
 
-    <section>
-        <h2>Registered Pets</h2>
+    <div class="row g-4">
+        <!-- Registration form -->
+        <div class="col-lg-7">
+            <section class="salon-panel p-4 p-md-5 rounded-4">
+                <h2 class="h3 mb-4">Pet Information</h2>
 
-        <div>
-            <ol id="list">
-            </ol>
+                <form id="petRegistrationForm">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="petName" class="form-label">
+                                Pet Name
+                            </label>
+                            <input
+                                id="petName"
+                                name="petName"
+                                type="text"
+                                class="form-control"
+                                placeholder="Example: Buddy"
+                                required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="petAge" class="form-label">
+                                Age in Years
+                            </label>
+                            <input
+                                id="petAge"
+                                name="petAge"
+                                type="number"
+                                class="form-control"
+                                min="0"
+                                step="0.1"
+                                placeholder="Example: 3"
+                                required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="petType" class="form-label">
+                                Pet Type
+                            </label>
+                            <select
+                                id="petType"
+                                name="petType"
+                                class="form-select"
+                                required>
+                                <option value="">Choose a pet type</option>
+                                <option value="Dog">Dog</option>
+                                <option value="Cat">Cat</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="petBreed" class="form-label">
+                                Breed (optional)
+                            </label>
+                            <input
+                                id="petBreed"
+                                name="petBreed"
+                                type="text"
+                                class="form-control"
+                                placeholder="Example: Golden Retriever">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="petService" class="form-label">
+                                Requested Service
+                            </label>
+                            <select
+                                id="petService"
+                                name="petService"
+                                class="form-select"
+                                required>
+                                <option value="">Choose a service</option>
+                                <option value="Bath & Brush">Bath & Brush</option>
+                                <option value="Full Grooming">Full Grooming</option>
+                                <option value="Nail Care">Nail Care</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="ownerName" class="form-label">
+                                Owner Name
+                            </label>
+                            <input
+                                id="ownerName"
+                                name="ownerName"
+                                type="text"
+                                class="form-control"
+                                autocomplete="name"
+                                required>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="ownerEmail" class="form-label">
+                                Owner Email
+                            </label>
+                            <input
+                                id="ownerEmail"
+                                name="ownerEmail"
+                                type="email"
+                                class="form-control"
+                                autocomplete="email"
+                                placeholder="you@example.com"
+                                required>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="petNotes" class="form-label">
+                                Anything We Should Know? (optional)
+                            </label>
+                            <textarea
+                                id="petNotes"
+                                name="petNotes"
+                                class="form-control"
+                                rows="3"
+                                placeholder="Tell us about any special care needs."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-wrap gap-3 mt-4">
+                        <button
+                            id="registerPet"
+                            type="submit"
+                            class="btn btn-success">
+                            Register Pet
+                        </button>
+
+                        <button type="reset" class="btn btn-outline-secondary">
+                            Clear Form
+                        </button>
+                    </div>
+                </form>
+            </section>
         </div>
 
-    </section>
+        <!-- Registered pets -->
+        <div class="col-lg-5">
+            <section class="salon-panel p-4 rounded-4">
+                <h2 class="h3">Registered Pets</h2>
+                <p>Your registered pets will appear below.</p>
 
+                <ol id="list" class="ps-4 mb-0" aria-live="polite">
+                </ol>
+            </section>
+        </div>
+    </div>
+</main>
+
+<footer class="container text-center py-4 border-top">
+    <p class="mb-0">Pet Salon · Care for your best friend 🐾</p>
+</footer>
     <!-- Form -->
 
      <!-- Bootstrap -->

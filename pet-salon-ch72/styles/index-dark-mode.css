@@ -74,3 +74,77 @@ button, a {
   #resumeContainer {
     display: none;
   }
+
+  /* Panels use your existing light and dark color variables. */
+.salon-panel {
+    background-color: var(--surface-color);
+    color: var(--text-color);
+    border: 1px solid var(--accent-color);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.pet-emoji {
+    display: block;
+    font-size: 8rem;
+    line-height: 1.2;
+}
+
+.service-emoji {
+    font-size: 2.5rem;
+}
+
+main,
+footer {
+    color: var(--text-color);
+}
+
+#changeModeBtn {
+    min-width: 48px;
+}
+
+/* Registration page */
+.registration-page {
+    background-color: #fffaf0;
+    color: #233d34;
+}
+
+.registration-page h1,
+.registration-page h2 {
+    color: #285943;
+}
+
+.registration-page p {
+    color: #526359;
+}
+
+.registration-page .salon-panel {
+    background-color: #e8f2e9;
+    border: 1px solid #bbd5c1;
+    box-shadow: 0 8px 24px rgba(35, 61, 52, 0.1);
+}
+
+.registration-page .form-label {
+    color: #285943;
+    font-weight: 600;
+}
+
+.registration-page .form-control,
+.registration-page .form-select {
+    background-color: #ffffff;
+    color: #233d34;
+    border: 1px solid #abc5b2;
+    border-radius: 8px;
+}
+
+.registration-page .form-control:focus,
+.registration-page .form-select:focus {
+    border-color: #36835a;
+    box-shadow: 0 0 0 3px rgba(54, 131, 90, 0.18);
+}
+
+.registration-page #list li {
+    background-color: #ffffff;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+}

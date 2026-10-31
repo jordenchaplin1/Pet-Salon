@@ -1,6 +1,7 @@
-$("#changeModeBtn").click(function(){
-    $("#changeModeBtn").click(function(){
-    console.log("Button clicked");
+$("#changeModeBtn").click(function() {
     $("body").toggleClass("dark-mode");
-});
+
+    const isDark = $("body").hasClass("dark-mode");
+
+    $(this).text(isDark ? "☀️" : "🌙");
 });
